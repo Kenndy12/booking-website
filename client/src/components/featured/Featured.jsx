@@ -2,33 +2,39 @@ import "./Featured.css"
 import Dublin from "../../assets/Dublin.webp";
 import Austin from "../../assets/Austin.webp";
 import Reno from "../../assets/Reno.webp";
+import useFetch from "../../hooks/useFetch";
 
 const Featured = () => {
+
+    const  {data, loading, error} = useFetch("/hotels/countByCity?cities=berlin,madrid,london")
+
   return (
     <div className="featured">
-        <div className="featuredItem">
+        {loading ? ("Loading please wait") : (
+        <><div className="featuredItem">
             <img src={Dublin} alt="" className="featuredImg" />
             <div className="featuredTitles">
-                <h1>Dublin</h1>
-                <h2>123 properties</h2>
+                <h1>Berlin</h1>
+                <h2>{data[0]} properties</h2>
             </div>
         </div>
 
         <div className="featuredItem">
             <img src={Austin} alt="" className="featuredImg" />
             <div className="featuredTitles">
-                <h1>Austin</h1>
-                <h2>546 properties</h2>
+                <h1>Madrid</h1>
+                <h2>{data[1]} properties</h2>
             </div>
         </div>
 
         <div className="featuredItem">
             <img src={Reno} alt="" className="featuredImg" />
             <div className="featuredTitles">
-                <h1>Reno</h1>
-                <h2>329 properties</h2>
+                <h1>London</h1>
+                <h2>{data[2]} properties</h2>
             </div>
-        </div>
+        </div></>
+        )}
 
     </div>
   )
