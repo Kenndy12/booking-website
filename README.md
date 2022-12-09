@@ -62,3 +62,24 @@ Once user has reserved a room, that given room will be unavailable for that spec
 
 ### Admin Page
 
+Upon starting the admin page, user will be greeted with the dashboard page **Note most of the things arent important the only section that is worth focusing are "Hotels, Users, and Rooms"**
+
+![image](https://user-images.githubusercontent.com/64679607/206627581-963695d3-3375-47f8-8a54-576158274496.png)
+
+Upon clicking any one of the three components user will be greeted with a page filled the aforementioned component as well as an option to add those new components
+
+User Page
+![admin1](https://user-images.githubusercontent.com/64679607/206627687-c75e424b-ea9f-41cd-b20c-3f647c445816.PNG)
+![admin2](https://user-images.githubusercontent.com/64679607/206627693-2c983acc-aebf-47f2-a625-e5e8025a8372.PNG)
+
+Hotel Page
+![admin3](https://user-images.githubusercontent.com/64679607/206627720-4f8ab97a-4503-4ff5-a941-01a22844e60c.PNG)
+![admin4](https://user-images.githubusercontent.com/64679607/206627732-20efd854-a18e-4479-8beb-502e4e6ab62d.PNG)
+
+Room Page
+![admin5](https://user-images.githubusercontent.com/64679607/206627743-6171a8c4-c4c7-4c80-99d4-74e99aec86e9.PNG)
+![admin6](https://user-images.githubusercontent.com/64679607/206627751-d49518ff-a77a-4874-aab3-d19b84a24e20.PNG)
+
+
+**NOTE IF YOU DONT SEE ANYTHING IN THE LIST PAGE OR YOU CANT ADD NEW COMPONENTS YOU MAY NEED TO RELOGIN, TO DO THIS SIMPLY GO TO HTTP://LOCALHOST:3000/LOGIN AND
+ENTER THE FOLLOWING, USERNAME: johndoe, PASSWORD: john**
